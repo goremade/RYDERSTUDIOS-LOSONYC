@@ -21,6 +21,8 @@
 
 		<div class="center-page">
 
+			<img class="animation" src="images/ryderxloso.gif">
+
 			<p class="countdown" id="countdown"></p>
 
 			<div class="shop-now" id="shop-now">
@@ -28,8 +30,6 @@
 					<button>SHOP NOW</button>
 				</a>
 			</div>
-
-			<img class="animation" src="images/ryderxloso.gif">
 
 		</div>
 
@@ -67,8 +67,8 @@
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Output the result in an element with id="demo"
-	document.getElementById("countdown").innerHTML = days + "days " + hours + "hours "
-	+ minutes + "minutes " + seconds + "seconds ";
+	document.getElementById("countdown").innerHTML = days + "days " + hours + "hrs "
+	+ minutes + "mins " + seconds + "secs ";
 
 	// If the count down is over, write some text 
 	if (distance < 0) {

@@ -126,6 +126,9 @@ input[type="email"]::placeholder {
 }
 
 .countdown {
+  font-family: Helvetica Neue, Sans-Serif;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 #shop-now {
@@ -134,7 +137,7 @@ input[type="email"]::placeholder {
 
 .animation {
   width: 6rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 
