@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>LOSO X RYDER</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+<body>
+
+	<style type="text/css">
+		
+
+	</style>
+
+	<div class="wrapper">
+
+		<div class="center-page">
+
+			<p class="countdown" id="countdown"></p>
+
+			<div class="shop-now" id="shop-now">
+				<a href="https://loso.nyc">
+					<button>SHOP NOW</button>
+				</a>
+			</div>
+
+			<img class="animation" src="images/ryderxloso.gif">
+
+		</div>
+
+		<div class="footer">
+			<div class="footer-left">
+				<img src="images/losonyc.svg">
+				<img src="images/ryder.svg">
+			</div>
+			<div>
+				Copyright 2021 LOSO NYC x Ryder Studios
+				<br>
+				All Rights Reserved
+			</div>
+		</div>
+		
+	</div>
+
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Mar 12, 2021 2:22:21 GMT-0500").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// Output the result in an element with id="demo"
+	document.getElementById("countdown").innerHTML = days + "days " + hours + "hours "
+	+ minutes + "minutes " + seconds + "seconds ";
+
+	// If the count down is over, write some text 
+	if (distance < 0) {
+	clearInterval(x);
+	document.getElementById("countdown").innerHTML = "";
+	document.getElementById("shop-now").style.display = 'block';
+	}
+	}, 1000);
+	</script>
+
+</body>
+</html>
