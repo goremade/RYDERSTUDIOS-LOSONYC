@@ -168,9 +168,14 @@ input[type="email"]::placeholder {
 
 /**************************** MOBILE ****************************/
 
-@media screen and (max-width: 475rem) {
+@media screen and (max-width: 475px) {
+
+  .footer-right {
+    display: block;
+  }
 
   .footer-left {
+    display: block;
     margin-bottom: 0.5rem;
   }
 
