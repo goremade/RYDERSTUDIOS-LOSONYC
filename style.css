@@ -149,7 +149,14 @@ input[type="email"]::placeholder {
 
 }
 .footer-left {
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.footer-right {
+  display: inline-block;
+  font-size: 0.7rem;
+  vertical-align:top;
 }
 
 .footer img {
